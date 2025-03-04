@@ -7,10 +7,23 @@
 
 	<style type="text/css">
 		* { font-family:"標楷體"; margin-left:auto; margin-right:auto;}
-		h1 {color:#FFFFBB; font-size:38px;}
-		h2 {color:#FFFFBB; font-size:35px;}
+		h1 {color:#FFFFBB; font-size:35px;}
+		h2 {color:#FFFFBB; font-size:30px;}
 
 	</style>
+
+	<script>
+		function change1() {
+  			document.getElementById("pic").src = "mountain.jpg";
+  			document.getElementById("h2text").innerText = "靜宜資管";
+		}
+
+		function change2() {
+  			document.getElementById("pic").src = "cliff.jpg";
+  			document.getElementById("h2text").innerText = "Chen-Yi Xin";
+		}
+	</script>
+
 
 </head>
 <body>
@@ -19,14 +32,14 @@
 		<tr>
 
 		   <td>
-		 	   <img src="cliff.jpg" width="110%"></img>
+		 	   <img src="cliff.jpg" width="110%"id="pic" onmouseover="change1()" onmouseout="change2()"></img>
 		   </td>
 
 
 		 <td>
 
 		 	<h1>陳妤欣</h1>
-		    <h2>Yi-Xin Chen</h2>
+		    <h2 id="h2text">Yi-Xin Chen</h2>
 
          </td>
 
@@ -70,7 +83,7 @@
       allow="microphone;"
       width="350"
       height="430"
-      src=<a href="https://console.dialogflow.com/api-client/demo/embedded/662097c6-776d-4a70-b368-08e42a7af5b9">https://console.dialogflow.com/api-client/demo/embedded/662097c6-776d-4a70-b368-08e42a7af5b9</a><br>
+      src="https://console.dialogflow.com/api-client/demo/embedded/662097c6-776d-4a70-b368-08e42a7af5b9">
     </iframe>
        </td>
 
